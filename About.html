@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Juliet's Website</title>
+</head>
+<body>
+    <header>
+        <h1 style="color:brown">Maria Juliet</h1>
+    </header>
+    <div class="navigation">
+        <ul>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    <span class="name">Maria Juliet</span></h2>
+
+    .container {
+        background-color: rgb(100, 84, 63);
+        width: 1500px;
+        height: 420px;
+        margin-top: 160px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .myphoto img {
+        border-radius: 50%;
+        border: 2px solid tan;
+        box-shadow: tan 0 0 20px;
+        width: 500px;
+        height: 500px;
+        float: left;   
+        margin-top: 40px; 
+        margin-left: 80px;
+        padding: 5px;
+    }
+    
+    .myinfo {
+        padding-top: 2px;
+        padding-left: 750px;
+    }
+    
+    .myinfo h2 {
+        margin-top: -70px;
+    }
+    
+    .myinfo h3 {
+        margin-top: -20px;
+    } 
+    
+    .myinfo h1 {
+        font-family: monospace;
+        font-size: 100px;
+    }
+    
+    .myinfo h2 span {
+        position: relative;
+        color: rgba(204, 169, 124, 80%);
+        font-size: 30px;
+    }
+    
+    .myinfo h2 span::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        border-left: 2px solid;
+        background: rgb(100, 84, 63);
+        animation: 
+            typing 2s steps(12) infinite, /* Adjust steps based on text length */
+            cursor .5s step-end infinite alternate;
+    }
+    
+    @keyframes cursor {
+        50% { border-color: transparent; }
+    }
+    
+    @keyframes typing {
+        100% {
+            left: 100%;
+            margin: 0 -18px 0 18px;
+        }
+    }
+    
+    #button {
+        background-color: rgb(204, 169, 124);
+        border-radius: 12px;
+        border: 3px solid rgb(204, 169, 124);
+        padding: 5px;
+        color:black;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    #button:hover {
+        background-color: rgb(100, 84, 63);
+        
+    }
+    
+    /* Responsive */
+    
+    @media screen and (max-width: 1160px) {
+        .container {
+            background-color: rgb(100, 84, 63);
+            width: 1500px;
+            height: 420px;
+            margin-top: 160px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+        
+        .myphoto img {
+            border-radius: 50%;
+            border: 2px solid tan;
+            box-shadow: tan 0 0 20px;
+            width: 450px;
+            height: 450px;
+            float: left;   
+            margin-top: 40px; 
+            margin-left: 80px;
+            padding: 5px;
+        }
+        
+        .myinfo {
+            padding-top: 2px;
+            padding-left: 650px;
+        }
+    }
+    
+    @media screen and (max-width: 1060px) {
+        .container {
+            background-color: rgb(100, 84, 63);
+            width: 1500px;
+            height: 420px;
+            margin-top: 160px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+        
+        .myphoto img {
+            border-radius: 50%;
+            border: 2px solid tan;
+            box-shadow: tan 0 0 20px;
+            width: 450px;
+            height: 450px;
+            float: left;   
+            margin-top: 40px; 
+            margin-left: 80px;
+            padding: 5px;
+        }
+        
+        .myinfo {
+            padding-top: 2px;
+            padding-left: 580px;
+        }
+    }
+    
+    @media screen and (max-width: 980px) {
+        .container {
+            background-color: rgb(100, 84, 63);
+            width: 1500px;
+            height: 420px;
+            margin-top: 160px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+        
+        .myphoto img {
+            border-radius: 50%;
+            border: 2px solid tan;
+            box-shadow: tan 0 0 20px;
+            width: 450px;
+            height: 450px;
+            float: left;   
+            margin-top: 40px; 
+            margin-left: 30px;
+            padding: 5px;
+        }
+        
+        .myinfo {
+            padding-top: 2px;
+            padding-left: 520px;
+        }
+    }
+    
+    @media screen and (max-width: 920px) {
+        .container {
+            background-color: rgb(100, 84, 63);
+            width: 700px;
+            height: 900px;
+            margin-top: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+        
+        .myphoto img {
+            border-radius: 50%;
+            border: 2px solid tan;
+            box-shadow: tan 0 0 20px;
+            width: 400px;
+            height: 400px;
+            float: none;   
+            margin-top: 40px; 
+            margin-left: 150px;
+            padding: 5px;
+        }
+        
+        .myinfo {
+            padding-top: -5px;
+            padding-left: 200px;
+        }
+    
+        footer {
+            margin-top: 5px;
+        }
+    }
+
+        
+</html>

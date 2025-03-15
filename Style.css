@@ -1,0 +1,157 @@
+body {
+    background-color: 	rgb(8,8,8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;}
+
+header {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:medium;
+    display: flex;
+    background-color: black;
+    margin: -10px;
+}
+
+header h1{
+    padding-left: 20px;
+    color: cyan;
+}
+
+.container {
+    
+    width: 1100px;
+    height: 420px;
+    margin-top: 160px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myphoto img {
+    border-radius: 50%;
+    border: 1px solid cyan;
+    box-shadow: cyan 0 0 20px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    float: left;
+}
+
+.myinfo {
+    padding-top: 5px;
+    padding-left: 580px;
+    position: block;
+    color: #add8e6;
+}
+
+.myinfo h1 {
+    font-family: monospace;
+    font-size: 100px;
+    color: cyan;
+}
+
+.myinfo h2 {
+    margin-top: -70px;
+}
+
+.myinfo h3 {
+    margin-top: -20px;
+}
+
+.myinfo h2 span {
+    position: relative;
+    background-image: linear-gradient(to left, cyan, #FF69B4);
+    color: transparent;
+    background-clip: text;
+    font-size: 30px;
+}
+
+.myinfo h2 span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    border-left: 2px solid;
+    background: rgb(8,8,8);
+    animation: 
+        typing 2s steps(12) infinite, /* Adjust steps based on text length */
+        cursor .5s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -18px 0 18px;
+    }
+}
+
+#button {
+    background-color: #add8e6;
+    border-radius: 12px;
+    border: 3px solid #add8e6;
+    padding: 5px;
+    color:black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background: linear-gradient(to left, cyan, #FF69B4);
+    
+}
+
+footer {
+    margin-top: 300px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot h4 {
+    margin-bottom: 5px;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(to left, cyan, #FF69B4);
+    color: transparent;
+    background-clip: text;
+}
+
+.phone li{
+    list-style: none;
+    color: #add8e6;
+}
+
+.email li{
+    list-style: none;
+}
+
+.email li a{
+    color: #add8e6;
+}
+
+.follow li{
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.follow li a{
+    font-size: 25px; /* Adjust size */
+    display: inline-block;
+    text-decoration: none;
+    color: #add8e6;
+}
+
+.follow li a:hover{
+    color: #ffb6c1;
+}
